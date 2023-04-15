@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer type="module"></script>
+</head>
+
+<body>
+    <form action="">
+        <div class="list-item">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+        </div>
+        <div class="list-item">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+        </div>
+        <div class="list-item">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="Pria">Pria</option>
+                <option value="Wanita">Wanita</option>
+            </select>
+        </div>
+        <div class="list-item">
+            <label for="alamat">Alamat</label>
+            <input type="text" id="alamat">
+        </div>
+        <div class="list-item" id="input-storage">
+            <label for="pilihan">Web Storage</label>
+            <div id="pilihan-storage">
+                <div class="storage-item">
+                    <input type="radio" id="localStorage" name="storage" value="local">
+                    <label for="localStorage">Local Storage</label>
+                </div>
+                <div class="storage-item">
+                    <input type="radio" id="sessionStorage" name="storage" value="session">
+                    <label for="sessionStorage">Session Storage</label>
+                </div>
+                <div class="storage-item">
+                    <input type="radio" id="cookie" name="storage" value="cookie">
+                    <label for="cookie">Cookie</label>
+                </div>
+            </div>
+        </div>
+        <div class="btn-submit">
+            <button type="submit" id="add-data">Add Data</button>
+            <button type="submit" id="show-data">Show Data</button>
+        </div>
+    </form>
+
+    <div id="list-data">
+    </div>
+
+</body>
+
+</html>
